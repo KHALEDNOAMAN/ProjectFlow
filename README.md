@@ -8,11 +8,12 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Chart.js](https://img.shields.io/badge/Chart.js-4-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)](https://www.chartjs.org/)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://project-flow-elnoaman.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 A modern Agile project management platform inspired by Jira and Trello. Features drag-and-drop Kanban boards, sprint planning with velocity tracking, burndown charts, team workload management, and real-time activity feeds. Built to demonstrate software engineering leadership and Agile methodology understanding.
 
-[Live Demo →](#) *(coming soon)*
+### 🔗 [Live Demo → project-flow-elnoaman.vercel.app](https://project-flow-elnoaman.vercel.app)
 
 </div>
 
@@ -43,7 +44,7 @@ A modern Agile project management platform inspired by Jira and Trello. Features
 ### 📊 Analytics Dashboard
 - Project progress overview with completion percentages
 - Tasks by status breakdown (pie chart)
-- Sprint velocity trend (line chart)
+- Sprint velocity trend (bar chart)
 - Team workload heatmap
 - Overdue tasks alert panel
 
@@ -87,7 +88,7 @@ ProjectFlow/
 | Vite 5 | Fast build tool |
 | React Router 6 | Client-side routing |
 | Chart.js 4 | Burndown & analytics charts |
-| CSS Modules | Scoped component styling |
+| Vercel | Cloud deployment |
 
 ## 🚀 Getting Started
 
