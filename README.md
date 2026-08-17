@@ -9,6 +9,14 @@
 
 ProjectFlow is a comprehensive Agile project management tool designed to streamline team workflows. It features intuitive Kanban boards, robust sprint planning capabilities, and rich visualizations like burndown charts and team workload analytics to keep your projects on track.
 
+## Overview
+
+ProjectFlow is a modern agile project management platform built for software development teams. It provides a visual Kanban board with drag-and-drop, sprint planning tools, and real-time analytics to help teams ship faster and track progress effectively.
+
+Inspired by tools like Jira and Linear, but designed to be lightweight, fast, and open-source.
+
+---
+
 ## âœ¨ Key Features
 
 - **Kanban Board:** Interactive drag-and-drop boards for seamless task progression.
@@ -77,7 +85,75 @@ src/
 - [ ] Time tracking capabilities
 - [ ] Export reports to PDF/CSV
 
-## ðŸ¤ Contributing
+## ðŸ¤ 
+---
+
+## Architecture
+
+```
+┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+│   React UI  │────►│  State Mgmt  │────►│  Chart.js   │
+│  (Kanban,   │     │  (Context +  │     │  (Burndown, │
+│   Sprint)   │     │   Reducers)  │     │   Velocity) │
+└─────────────┘     └──────────────┘     └─────────────┘
+       │                    │
+       ▼                    ▼
+┌─────────────┐     ┌──────────────┐
+│  DnD Kit    │     │  LocalStorage│
+│ (Drag/Drop) │     │  (Persist)   │
+└─────────────┘     └──────────────┘
+```
+
+---
+
+## How It Works
+
+1. **Create a Project** with team members and sprint duration
+2. **Add Tasks** to the backlog with labels, priority, and story points
+3. **Plan Sprints** by dragging tasks from backlog to sprint
+4. **Track Progress** on the Kanban board (To Do → In Progress → Done)
+5. **View Analytics** with burndown charts and velocity tracking
+6. **Run Retrospectives** with the built-in retro board
+
+---
+
+## Screenshots & Demo
+
+### Kanban Board
+```
+┌──────────────────────────────────────────────────┐
+│  Sprint 5 - Week 2                    [+ Task]   │
+│──────────────────────────────────────────────────│
+│  📋 To Do (3)    │ 🔄 In Progress (2)│ ✅ Done (5)│
+│ ┌──────────────┐ │ ┌──────────────┐  │ ┌────────┐│
+│ │ Auth system  │ │ │ API redesign │  │ │ Login  ││
+│ │ 🔴 High  5sp │ │ │ 🟡 Med  8sp  │  │ │ ✅ 3sp ││
+│ └──────────────┘ │ └──────────────┘  │ └────────┘│
+│ ┌──────────────┐ │ ┌──────────────┐  │ ┌────────┐│
+│ │ Dark mode    │ │ │ Dashboard    │  │ │ Signup ││
+│ │ 🟢 Low  2sp  │ │ │ 🔴 High  5sp │  │ │ ✅ 5sp ││
+│ └──────────────┘ │ └──────────────┘  │ └────────┘│
+└──────────────────────────────────────────────────┘
+```
+
+### Burndown Chart
+```
+Story Points
+30 │ ╲
+   │  ╲___
+20 │      ╲  ── Ideal
+   │       ╲___ Actual
+10 │           ╲___
+   │               ╲
+ 0 └──────────────────
+   Day1  3  5  7  10
+```
+
+### Live Demo
+> `npm install && npm run dev` → Open `http://localhost:5173`
+
+
+Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
