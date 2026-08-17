@@ -1,123 +1,92 @@
-<div align="center">
+# ProjectFlow
 
-# 📋 ProjectFlow
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 
-**Agile Project Management Tool with Kanban Boards, Sprint Planning & Team Analytics**
+> A modern agile project management platform with Kanban boards, Sprint planning, and detailed analytics.
 
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Chart.js](https://img.shields.io/badge/Chart.js-4-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)](https://www.chartjs.org/)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://project-flow-elnoaman.vercel.app)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+ProjectFlow is a comprehensive Agile project management tool designed to streamline team workflows. It features intuitive Kanban boards, robust sprint planning capabilities, and rich visualizations like burndown charts and team workload analytics to keep your projects on track.
 
-A modern Agile project management platform inspired by Jira and Trello. Features drag-and-drop Kanban boards, sprint planning with velocity tracking, burndown charts, team workload management, and real-time activity feeds. Built to demonstrate software engineering leadership and Agile methodology understanding.
+## âœ¨ Key Features
 
-### 🔗 [Live Demo → project-flow-elnoaman.vercel.app](https://project-flow-elnoaman.vercel.app)
+- **Kanban Board:** Interactive drag-and-drop boards for seamless task progression.
+- **Sprint Planning & Backlog:** Easily manage product backlogs and plan upcoming sprints.
+- **Advanced Analytics:** Visualize progress with burndown and velocity charts powered by Chart.js.
+- **Team Workload Management:** Monitor team capacity and balance workloads effectively.
+- **Powerful Filtering:** Quickly find tasks using advanced search, filtering, and custom labels.
+- **Real-time Collaboration:** Keep the whole team in sync with real-time updates.
+- **Dark Mode Support:** Built-in dark mode for comfortable viewing in low-light environments.
+- **Responsive Design:** Fully optimized experience across desktop, tablet, and mobile devices.
 
-</div>
+## ðŸ› ï¸ Tech Stack
 
----
+- **Frontend Framework:** React
+- **Language:** TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Data Visualization:** Chart.js
 
-## ✨ Features
+## ðŸš€ Getting Started
 
-### 📋 Kanban Board
-- Drag-and-drop task cards between columns (To Do → In Progress → In Review → Done)
-- Color-coded priority badges (Critical, High, Medium, Low)
-- Task assignee avatars with team member selection
-- Due date tracking with overdue highlighting
-- Story point estimation for sprint planning
+### Prerequisites
 
-### 🏃 Sprint Management
-- Create and manage time-boxed sprints (1-4 weeks)
-- Sprint backlog with task assignment
-- Burndown chart showing ideal vs actual progress
-- Sprint velocity tracking across multiple sprints
-- Sprint retrospective notes
+- Node.js (v16 or higher)
+- npm or yarn
 
-### 👥 Team Management
-- Team member directory with roles and avatars
-- Workload distribution visualization
-- Task assignment and capacity tracking
-- Activity feed showing recent team actions
+### Installation
 
-### 📊 Analytics Dashboard
-- Project progress overview with completion percentages
-- Tasks by status breakdown (pie chart)
-- Sprint velocity trend (bar chart)
-- Team workload heatmap
-- Overdue tasks alert panel
+1. Clone the repository
+   \\\ash
+   git clone https://github.com/KHALEDNOAMAN/ProjectFlow.git
+   cd ProjectFlow
+   \\\
+2. Install dependencies
+   \\\ash
+   npm install
+   \\\
+3. Start the development server
+   \\\ash
+   npm run dev
+   \\\
 
----
+## ðŸ“ Project Structure
 
-## 🏗️ Architecture
+\\\	ext
+src/
+â”œâ”€â”€ components/     # Reusable UI components (Buttons, Modals, etc.)
+â”œâ”€â”€ features/       # Feature-specific components (Kanban, Sprints, Analytics)
+â”œâ”€â”€ hooks/          # Custom React hooks
+â”œâ”€â”€ context/        # React Context providers for state management
+â”œâ”€â”€ utils/          # Helper functions and utilities
+â”œâ”€â”€ types/          # TypeScript type definitions
+â””â”€â”€ assets/         # Static assets (images, icons)
+\\\
 
-```
-ProjectFlow/
-├── src/
-│   ├── components/
-│   │   ├── KanbanBoard.tsx      # Drag-and-drop board
-│   │   ├── KanbanColumn.tsx     # Board column
-│   │   ├── TaskCard.tsx         # Draggable task card
-│   │   ├── TaskModal.tsx        # Task detail/edit modal
-│   │   ├── SprintPlanning.tsx   # Sprint management view
-│   │   ├── BurndownChart.tsx    # Sprint burndown visualization
-│   │   ├── Dashboard.tsx        # Analytics overview
-│   │   ├── TeamView.tsx         # Team management
-│   │   ├── Sidebar.tsx          # Navigation sidebar
-│   │   └── ActivityFeed.tsx     # Recent actions feed
-│   ├── types/
-│   │   └── index.ts             # TypeScript interfaces
-│   ├── data/
-│   │   └── sampleData.ts       # Realistic sample data
-│   ├── hooks/
-│   │   └── useLocalStorage.ts   # Persistent state hook
-│   ├── utils/
-│   │   └── helpers.ts           # Date, color, formatting utils
-│   └── App.tsx                  # Root with routing
-├── package.json
-└── README.md
-```
+## ðŸ§© Key Components
 
-## 🛠️ Tech Stack
+- \KanbanBoard\: Core component handling drag-and-drop task management.
+- \SprintPlanner\: Interface for organizing backlog items into structured sprints.
+- \AnalyticsDashboard\: Central hub for burndown charts, velocity tracking, and workload metrics.
 
-| Technology | Purpose |
-|-----------|---------|
-| React 18 | UI component library |
-| TypeScript 5 | Type safety and better DX |
-| Vite 5 | Fast build tool |
-| React Router 6 | Client-side routing |
-| Chart.js 4 | Burndown & analytics charts |
-| Vercel | Cloud deployment |
+## ðŸ—ºï¸ Roadmap
 
-## 🚀 Getting Started
+- [ ] Integration with GitHub/GitLab
+- [ ] Custom workflow states
+- [ ] Time tracking capabilities
+- [ ] Export reports to PDF/CSV
 
-```bash
-git clone https://github.com/KHALEDNOAMAN/ProjectFlow.git
-cd ProjectFlow
-npm install
-npm run dev
-```
+## ðŸ¤ Contributing
 
-## 📖 Agile Concepts Implemented
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-| Concept | Implementation |
-|---------|---------------|
-| **Kanban** | Visual board with WIP limits and flow optimization |
-| **Sprints** | Time-boxed iterations with backlog grooming |
-| **Burndown** | Daily progress tracking against sprint goals |
-| **Velocity** | Story points completed per sprint trending |
-| **Retrospectives** | What went well / What to improve / Action items |
-| **User Stories** | Task descriptions following "As a... I want... So that..." |
+1. Fork the repository
+2. Create your feature branch (\git checkout -b feature/AmazingFeature\)
+3. Commit your changes (\git commit -m 'Add some AmazingFeature'\)
+4. Push to the branch (\git push origin feature/AmazingFeature\)
+5. Open a Pull Request
 
-## 📝 License
-MIT License - see [LICENSE](LICENSE) file.
+## ðŸ“„ License
 
----
-<div align="center">
-
-Built by [Khaled Noaman](https://github.com/KHALEDNOAMAN) — Aspiring Engineering Manager 🚀
-
-*"The best managers are those who understand the work their teams do."*
-
-</div>
+This project is licensed under the MIT License.
